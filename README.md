@@ -8,7 +8,7 @@ Splash Ink Landscape + Suminagashi Marbling + Refik Anadol’s *Melting Memories
 ![Splash Ink by Zhang daqian](images/Splash_ink_DaqianZhang_1.png)
 ![Splash Ink by Zhang daqian](images/Splash_ink_DaqianZhang_2.png)
 ![Suminagashi Marbling](images/suminagashi1.png)
-![Refik Anadol – Melting Memories](images/RefikAnadol _MeltingMemories_1.jpg)
+![Refik Anadol Melting Memories](images/RefikAnadol_MeltingMemories_1.jpg)
 
 
 **Rationale:**  
