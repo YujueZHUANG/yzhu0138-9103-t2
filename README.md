@@ -7,7 +7,9 @@ Splash Ink Landscape + Suminagashi Marbling + Refik Anadol’s *Melting Memories
 ## Image 
 ![Splash Ink by Zhang daqian](images/Splash_ink_DaqianZhang_1.png)
 ![Splash Ink by Zhang daqian](images/Splash_ink_DaqianZhang_2.png)
+*Zhang Daqian’s abstract splash-ink style captures natural spontaneity.*
 ![Suminagashi Marbling](images/suminagashi1.png)
+*Traditional Japanese marbling that inspired my flowing motion concept.*
 ![Refik Anadol Melting Memories](images/RefikAnadol_MeltingMemories_1.jpg)
 
 
