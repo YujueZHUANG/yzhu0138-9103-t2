@@ -113,7 +113,7 @@ These floating blocks stem from a geometric abstraction of urban density and mov
 # Core Techniques — Learning Resources
 These are some of the coding techniques I applied beyond the classroom, which I learned through these external resources.
 
-1. **Perlin Noise (Basics)**
+1. **Perlin Noise**
    https://youtu.be/4hqBdpibSRQ  
    *Used for coastline animation.Combines the techniques taught in class for creating noisy shapes and using Perlin noise to animate size variations.*
 
