@@ -107,10 +107,11 @@ The stations are represented as circles, and I used Perlin noise to create subtl
 These floating blocks stem from a geometric abstraction of urban density and movement. They combine Mondrian-inspired color fields, the mosaic structure of data-driven city maps, and the rhythmic patterns seen when viewing buildings from above. Their gentle drifting and tap-to-refresh interaction symbolize the continuous flow of urban energy and the city’s ever-changing vitality.
 ![cityblock](assets/cityblock3.avif)
 
+---
+
 
 # Core Techniques — Learning Resources
-
-These are the four essential creative-coding techniques used in my project, with the best learning videos:
+These are some of the coding techniques I applied beyond the classroom, which I learned through these external resources.
 
 1. **Perlin Noise (Basics)**
    https://youtu.be/4hqBdpibSRQ  
