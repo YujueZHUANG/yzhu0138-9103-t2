@@ -5,6 +5,8 @@ Open 1SydneyRailBroadway.html in a web browser.
 
 ### How to interact
 Click the Mondrian town.
+
+
 ---
 ## How I applied perlin noise
 In my individual task, I was responsible for the Perlin noise component.
