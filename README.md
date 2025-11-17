@@ -1,11 +1,12 @@
 *IDEA9103 Individual task yzhu0138 Perlin noise*
 ![Image](assets/individualpreview.png)
-**How to run**
-Open 1SydneyRailBroadway.html in a web browser 
-**How to interact**
-Click the Mondrain town
+### How to run
+Open 1SydneyRailBroadway.html in a web browser.
+
+### How to interact
+Click the Mondrian town.
 ---
-**How I applied perlin noise**
+## How I applied perlin noise
 In my individual task, I was responsible for the Perlin noise component.
 Building on the shared codebase, I applied Perlin noise to three areas:
 - Breathing halos on railway stations  
