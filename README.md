@@ -1,6 +1,7 @@
 *IDEA9103 Individual task*
 ![Image](assets/individual.png)
-In my individual task, I applied Perlin noise to three major layers of the artwork:
+In my individual task, I was responsible for the Perlin noise component.
+Building on the shared codebase, I applied Perlin noise to three areas:
 - Breathing halos on railway stations  
 - Floating rectangles in the Mondrian town  
 - A dynamic ocean system including:  
@@ -18,6 +19,11 @@ The noise sampled from *(x, y, time)* controls both radius and transparency:
 let n = noise(x * 0.05, y * 0.05, frameCount * 0.02);
 let haloR = map(n, 0, 1, dot_R * 1.5, dot_R * 4.4);
 let haloA = map(n, 0, 1, 30, 80);
+noFill();
+stroke(red(col), green(col), blue(col), haloA);
+strokeWeight(4);
+circle(x, y, haloR);
+
 ```
 
 This transforms each static station dot into a **gently breathing, pulsating light**, adding rhythmic energy to the entire map.
@@ -31,12 +37,17 @@ In the Mondrian-inspired town, Perlin noise is used to animate the **drifting mo
 Each block has its own noise seed and calculates drifting offsets every frame:
 
 ```js
-let xNoise = noise(r.noiseLocation);
-let yNoise = noise(r.noiseLocation + 10);
-
+let xNoise = noise(this.noiseLocation);
+let yNoise = noise(this.noiseLocation + 10);
 let maxOffset = 20;
-let offsetX = (xNoise - 0.5) * 2 * maxOffset * r.noiseScale;
-let offsetY = (yNoise - 0.5) * 2 * maxOffset * r.noiseScale;
+let offsetX = (xNoise - 0.5) * 2 * maxOffset * this.noiseScale;
+let offsetY = (yNoise - 0.5) * 2 * maxOffset * this.noiseScale;
+let cx = this.baseX + offsetX;
+let cy = this.baseY + offsetY;
+rect(cx - this.w / 2, cy - this.h / 2, this.w, this.h);
+
+this.noiseLocation += 0.018;
+
 ```
 
 The result is a **soft floating effect**: blocks gently drift left and right, up and down, injecting a subtle sense of motion into the rigid Mondrian geometry.
@@ -70,7 +81,6 @@ let n = noise(
   frameCount * 0.01 + p.noiseOffset
 );
 let angle = n * TWO_PI + PI;
-
 let vx = cos(angle) * p.speed;
 let vy = sin(angle) * p.speed;
 ```
@@ -88,7 +98,7 @@ These are the four essential creative-coding techniques used in my project, with
 
 1. **Perlin Noise (Basics)**
    https://youtu.be/4hqBdpibSRQ  
-   *Used for breathing halos, drifting Mondrian blocks, and coastline animation.*
+   *Used for coastline animation.Combines the techniques taught in class for creating noisy shapes and using Perlin noise to animate size variations.*
 
 2. **Flow Field with Perlin Noise**
    https://youtu.be/BjoM9oKOAKY  
