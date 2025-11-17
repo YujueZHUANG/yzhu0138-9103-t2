@@ -18,7 +18,7 @@ const townOutline = [
   { x: 62, y: 180 },
   { x: 62, y: 100 }
 ];
-
+//Draw the outline of the Mondrian-style town shape
 function drawTownOutline() {
   stroke(mondrianYellow);
   strokeWeight(townLineW);
@@ -50,7 +50,7 @@ function initTownGrid() {
   }
   townGridYs.sort((a, b) => a - b);
 }
-
+//Draw the dotted grid inside the town outline.
 function drawTownGrid() {
   if (townGridXs.length === 0) initTownGrid();
   stroke(mondrianYellow);
@@ -69,7 +69,7 @@ function drawTownGrid() {
     }
   }
 }
-
+// Check whether a point (px, py) lies inside a polygon.
 function pointInPoly(px, py, poly) {
   let inside = false;
   for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
@@ -104,7 +104,7 @@ const outlineTickAnchors = [
 let outlineTickT = Math.max(1, townLineW - 2);
 let outlineTickLMin = 14;
 let outlineTickLMax = 28;
-
+//Create the floating outline blocks with random size, color, and rotation.
 function initOutlineBlocks() {
   outlineBlocks = [];
   for (let a of outlineTickAnchors) {
@@ -114,7 +114,7 @@ function initOutlineBlocks() {
     outlineBlocks.push({ cx: a.cx, cy: a.cy, ang: a.ang, L, W, color });
   }
 }
-
+//Draw the rotated rectangular blocks around the town outline.
 function drawOutlineBlocks() {
   if (outlineBlocks.length === 0) initOutlineBlocks();
   noStroke();
