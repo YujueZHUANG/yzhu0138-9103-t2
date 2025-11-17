@@ -1,5 +1,5 @@
 *IDEA9103 Individual task*
-![Image](assets\individual.png)
+![Image](assets/individual%20.png)
 In my individual task, I was responsible for the Perlin noise component.
 Building on the shared codebase, I applied Perlin noise to three areas:
 - Breathing halos on railway stations  
