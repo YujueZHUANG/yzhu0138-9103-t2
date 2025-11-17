@@ -94,18 +94,18 @@ The particles also change color based on horizontal position using a shallow-to-
 # My inspiration
 **Sea particle flow and coastline**
 The right side of the work represents the sea of Sydney. Since the ocean is never still, I experimented with Perlin noise to introduce the movement of water, drifting particles, and a gently undulating coastline. My visual inspiration comes from natural marine phenomena — especially sea mist, suspended micro-particles in seawater, and the swirling, fluid motion created when ink diffuses through water.
-![flow particle](assets\particleinwater.avif)
-![flow particle](assets\particleinsea.avif)
-![coastline](assets\coastline1.avif)
+![flow particle](assets/particleinwater.avif)
+![flow particle](assets/particleinsea.avif)
+![coastline](assets/coastline1.avif)
 
 **Halo and station**
 The stations are represented as circles, and I used Perlin noise to create subtle, flickering halos around them. These glowing rings symbolize the vibrancy of Sydney’s urban life and evoke the guiding lights that lead trains through the night. The visual inspiration comes from the soft halos of lamps in darkness and the rhythmic shimmer of neon lights.
-![halo2](assets\halo2.avif)
-![halo1](assets\halo1.avif)
+![halo2](assets/halo2.avif)
+![halo1](assets/halo1.avif)
 
 **Floating block**
 These floating blocks stem from a geometric abstraction of urban density and movement. They combine Mondrian-inspired color fields, the mosaic structure of data-driven city maps, and the rhythmic patterns seen when viewing buildings from above. Their gentle drifting and tap-to-refresh interaction symbolize the continuous flow of urban energy and the city’s ever-changing vitality.
-![cityblock](assets\cityblock3.avif)
+![cityblock](assets/cityblock3.avif)
 
 
 # Core Techniques — Learning Resources
