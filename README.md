@@ -1,6 +1,6 @@
 *IDEA9103 Individual task*
+![Image](assets/individual.png)
 In my individual task, I applied Perlin noise to three major layers of the artwork:
-
 - Breathing halos on railway stations  
 - Floating rectangles in the Mondrian town  
 - A dynamic ocean system including:  
