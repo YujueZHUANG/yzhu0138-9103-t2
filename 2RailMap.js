@@ -99,13 +99,13 @@ const p_CityCircle = [
 let c_SeaLight = "#D4E8EF";
 let c_SeaDeep = "#7AAFC8";
 
-//sea particles
+// Define the sea-particle system: an array of particles, total count, and the horizontal range they occupy
 let seaParticles = [];
 const SEA_PARTICLE_COUNT = 1200;
 const SEA_X_MIN = 490;
 const SEA_X_MAX = 580;
 
-
+//Initialize sea particles with random positions, speeds, and noise offsets.
 function initSeaParticles() {
   seaParticles = [];
   for (let i = 0; i < SEA_PARTICLE_COUNT; i++) {
@@ -118,7 +118,7 @@ function initSeaParticles() {
   }
 }
 
-// sea
+// Draw sea
 function drawSea() {
   noStroke();
   let steps = 100;
@@ -152,12 +152,11 @@ function drawSea() {
   drawSeaFlow();
 }
 
-// Particles flow
+//  Draw particles flow
 function drawSeaFlow() {
   for (let p of seaParticles) {
     let depth = (p.x - SEA_X_MIN) / (SEA_X_MAX - SEA_X_MIN);
     depth = constrain(depth, 0, 1);
-
     let seaCol = lerpColor(color(c_SeaLight), color(c_SeaDeep), depth);
     seaCol.setAlpha(190);
 
@@ -204,7 +203,7 @@ function drawSeaFlow() {
     }
   }
 }
-//draw rails
+//Draw all rail lines with their corresponding colors
 function drawRails() {
   strokeWeight(stroke_W);
   noFill();
@@ -228,7 +227,7 @@ function drawRails() {
 }
 
 
-//  Station  positions  colours
+//  Station's positions and colours
 let stations = [
   //  M1 
   { x: 100, y: 150, col: c_M1 },
@@ -310,7 +309,7 @@ function drawStationWithHalo(x, y, col) {
   circle(x, y, haloR);
 }
 
-
+//Draws a polyline by connecting each pair of consecutive points.
 function drawPolyline(points, color) {
   if (!points || points.length < 2) return;
   stroke(color);
